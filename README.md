@@ -16,6 +16,6 @@ Abhinav Tripathi  abhitrip2002@gmail.com
 
 Shrevi Jain       shrevijainbhl@gmail.com
 
-Sukriti Rajora    sukritirajora
+Sukriti Rajora    sukritirajora@gmail.com
 
 Tejas Prajapati   tejas.20cse404@rtu.ac.in
