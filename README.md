@@ -15,6 +15,7 @@ The site works equally well on PCs, laptops and mobiles.
 ## How to use:
 
 -Get started be using the below link 
+
 https://gdsc-rtu.github.io/Solution-Challenge-CureNimal/
 
 -Create an account by click sign up
