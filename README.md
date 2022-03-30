@@ -13,6 +13,9 @@ The site works equally well on PCs, laptops and mobiles.
 
 ## Team members
 Abhinav Tripathi 
+
 Shrevi Jain
-Sukriti Rajora 
+
+Sukriti Rajora
+
 Tejas Prajapati 
