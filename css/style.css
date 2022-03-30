@@ -1,0 +1,443 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+/* ----------------------------header-------------------------- */
+body{
+    font-family: "Roboto";
+}
+/* body .header .logo-profile{
+    height: 20%;
+    width: 100%;
+    background-color: #276678;
+}  */
+
+.logo-profile {
+    display: flex;
+    background-color: #07485c;
+}
+.logo{
+    display: flex;
+}
+.profile{
+    display: flex;
+}
+.logo-profile .logo img{
+    margin-left: 30px;
+    height: 70px;
+}
+
+.logo-profile .logo h2{
+
+    margin-top: 20px;
+    width: 443px;
+    height: 50px;
+    color: #FFFFFF;
+    font-family: "Roboto";
+}
+
+.logo-profile .profile h2{
+    margin-top: 24px;
+    font-family: "Roboto";
+    position: absolute;
+    left: 90%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFF8F8;
+}
+
+/* ----------------------------main.html-------------------------- */
+
+#pet_maps button{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+/* Landing page  */
+section{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(21.94deg, #75AB98 43.71%, #FAFAFA 76.47%)
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.button form{
+    box-shadow: -7px -5px 7px #5F5F5F;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: white;
+    width: 370px;
+    height: 415px;
+    align-items: center;
+    justify-content: center;
+}
+.button form h1{
+    font-family: 'Paytone One', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    line-height: 2;
+}
+.button button{
+    background-color: #33584B;
+    color: white;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-family: 'Rhodium Libre', serif;
+}
+.button button form .signup{
+    margin-top: 30px;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 480px;
+}
+.image h1{
+    font-family: 'Rhodium Libre', serif;
+    font-size: 42px;
+}
+.image p{
+    font-family: 'Rhodium Libre', serif;
+    font-size: 18px;
+}
+.image img{
+    width: 197.26px;
+    height: 116px; 
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+.paw img{
+    position: absolute;
+    bottom: 2px;
+}
+
+/* Sign Up Page   */
+
+.signUpForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.signUpForm form{
+    box-shadow: -7px -5px 7px #5F5F5F;
+    border-radius: 15px;
+    background-color: white;
+    width: 400px;
+    height: 500px;
+}
+
+.signUpForm form h1{
+    font-family: 'Paytone One', sans-serif;
+    font-size: 35px;
+    line-height: 77px;
+}
+
+.signUpForm form h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+.signUpForm form h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+.signUpForm form label{
+    font-size: 17px;
+    margin-left: 50px;
+}
+
+.signUpForm form input{
+    padding-left: 9px;
+    font-size: 15px;
+    border-radius: 8px;
+    width: 300px;
+    display: block;
+    margin: auto;
+    height: 32px;
+}
+
+.signUpForm form #next{
+    border-radius: 9px;
+    width: 80px;
+    height: 33px;
+    font-size: 13px;
+    margin-left: 270px;
+    color: white;
+    background-color: #33584B;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.signUpForm form p{
+    line-height: 90px;
+    text-align: center;
+}
+
+/* Login page  */
+
+.loginForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.loginForm form{
+    /* border: 2px solid black; */
+    box-shadow: -7px -5px 7px #5F5F5F;
+    border-radius: 15px;
+    background-color: white;
+    width: 400px;
+    height: 440px;
+}
+
+.loginForm form h1{
+    font-family: 'Paytone One', sans-serif;
+    font-size: 35px;
+    line-height: 77px;
+}
+
+.loginForm form h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+.loginForm form h2{
+    font-family: 'Poppins', sans-serif;
+    line-height: 52px;
+    font-weight: bolder;
+
+}
+
+.loginForm form label{
+    font-size: 17px;
+    margin-left: 50px;
+    line-height: 3;
+}
+
+.loginForm form input{
+    padding-left: 9px;
+    font-size: 20px;
+    border-radius: 8px;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.loginForm form #next{
+    border-radius: 9px;
+    width: 70px;
+    font-size: 13px;
+    margin-left: 280px;
+    color: white;
+    background-color: #33584B;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+/* ------------------------help.html-------------------- */
+
+.wrapper{
+    margin: 30px;
+    padding: 30px;
+}
+.header .home_page a{
+    margin-left: 300px;
+    font-size: 25px;
+    position: absolute;
+    top: 30px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: #ffffff;
+}
+.home_page :hover{
+    opacity: .66;
+}
+.heading {
+    font: Payton One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 98px;
+    color: #000000;
+}
+
+.wrapper .animal h2{
+    font-family: "Poppins";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 50px;
+}
+
+/* input[type="text"]{
+    width: 30%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+} */
+
+.wrapper .injury h2{
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 30px;
+}
+.result a{
+    text-align: center;
+    position: absolute;
+    width: 131px;
+    height: 33px;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 38px;
+    line-height: 33px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #276678;
+    border-radius: 5px;
+    width: 236px;
+    height: 56px;
+
+}
+
+.result :hover{
+    background-color: #07485c;
+}
+
+
+/* ------------------------------My_pet------------------------- */
+
+.MyPet{
+    position: absolute;
+    font-family: 'Paytone One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 41px;
+    color: #000000;
+    padding: 30px;
+    margin-top: 30px;
+    }
+
+.details{
+    position: relative;
+    padding: 30px;
+    border-radius: 4px;
+    height: 30px;
+    margin-top: 100px;
+}
+
+.morePetDetails{
+    height: 43px;
+    width: 138px;
+    margin: 30px;
+    margin-top: 60px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size:28px ;
+    
+    position: relative;
+    background-color: #117996;
+}
+
+
+/* ----------------------hospital.html------------------------------------ */
+.hospital{
+    margin: 30px;
+    padding: 30px;
+}
+.hospital h1 , .allow ,input{
+    margin:-1px;
+}
+
+.hospital h1{
+    /* width: 689px; */
+    /* height: 185px; */
+    font-family: Paytone One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 65px;
+    line-height: 91px;
+    }
+
+.hospital h3{
+    width: 445px;
+    height: 62px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
+}
+.hospital button{
+    
+    width: 174px;
+    height: 41px;
+    background: #276678;
+    border: 1px solid #276678;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    
+    color: #ffffff;
+}
+
+.hospital p{
+    width: 87px;
+    height: 62px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
+    align-items: center;
+    text-align: center;
+}
+
+.hospital .address{
+    margin-top: 0px;
+    width: 426px;
+    height: 64px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.hospital .hp1 ,.hp2 ,.hp3{
+    display: grid;
+    width: 414px;
+    height: 100px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
