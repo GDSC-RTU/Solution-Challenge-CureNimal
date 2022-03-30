@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Page</title>
+    <link rel="icon" type="image/x-icon" href="images/Fav.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="asset/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="asset/css/noscript.css" />
+	</noscript>
+    <link rel="stylesheet" href="css/res.css"> 	
+</head>
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<a href="index.html" class="logo"><strong>Curenimal</strong></a>
+			<nav>
+				<a href="#menu" style="color: white;">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links" style="color: white;">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="profile.html">Profile</a></li>
+				<li><a href="index.html">Log out</a></li>
+			</ul>
+		</nav>
+        <div id="help_content">
+            <div id="help_form">
+                <h1>Help them Out!</h1>
+                <h2>Select the animal</h2>
+                <select name="animal" id="animal">
+                    <option value="">--Select Animal--</option>
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                    <option value="cow">Cow/Buffalo</option>
+                    <!-- <option value="cow">Buffalo</option> -->
+                    <option value="bird">Bird</option>
+                    <option value="goat">Goat/Sheep</option>
+                    <!-- <option value="goat">Sheep</option> -->
+                </select>
+    
+                <h3>Select the injury</h3>
+                <select name="injury" id="injury">
+                    <option value="">--Select Injury--</option>
+                    <option value="wound">Wound</option>
+                    <option value="rashes">Rashes</option>
+                    <option value="fracture">Bone Fracture</option>
+                </select>
+    
+                <br>
+                <button id="result-btn" onclick="display()">Result</button>
+            </div>
+    
+            <div id="help_result">
+                <!-- <h2>Result will be displayed here</h2> -->
+            </div>
+        </div>
+		
+	</div>
+
+	<!-- Scripts -->
+    <script>
+
+        function display() {
+            var animal_val = document.getElementById('animal').value;
+            var injury_val = document.getElementById('injury').value;
+
+            if (animal_val == 'dog' && injury_val == 'wound') {
+                document.getElementById('help_result').innerHTML = '\
+            \
+            <img src="images/dog.jfif" alt="">\
+            <h4>Step 1.</h4>\
+            Make sure your patient is calm.<br>\
+            If not, use the sound below to make them calm. <br> \
+            <audio controls>\
+                    <source src="audio/Dog.mp3" type="">\
+                </audio>\
+            <h4>Step 2.</h4>\
+            Give your patient a first aid treatment.<br>\
+            \
+            Clean the wound gently using water (mix is with salt is available)<br>\
+            Note: Do not use rubbing alcohol or hydrogen peroxide, as these can damage the tissue and delay healing.<br>\
+            Dry the wound by slowly patting with cloth and apply antibacterial ointment (if available) or spread little\
+            termite powder on it.<br>\
+            Cover the wound with a piece of cloth or bandage (if available). While covering it with cloth, apply a\
+            LITTLE pressure on it, just enough to stop the blood flow until reached the hospital.\
+            Note that your patient can tolerate the process and feel safe around you.<br>\
+            \
+            <h4>Step 3.</h4>\
+            Find hospitals near you, using the button below.';
+            }
+
+            else if(animal_val == 'dog' && injury_val == 'rashes'){
+                document.getElementById('help_result').innerHTML = '\
+                <img src="images/dog.jfif" alt="">\
+                <h4>Step 1.</h4>\
+                Make sure your patient is calm.<br>\
+                If not, use the sound below to make them calm.<br>\
+                <audio controls>\
+                    <source src="audio/Dog.mp3" type="">\
+                </audio>\
+                <h4>Step 2.</h4>\
+                When it comes to Skin Disorders, there are multiple treatments you can go for before taking the patient to the hospital.<br>\
+                (Make sure your hands are covered with gloves or any material to avoid the direct contact)<br>\
+                1. Shampoo treatment:\ Medicated shampoos are commonly used as topical treatments for specific skin conditions.<br>\
+                Before applying a medicated shampoo, wash your dog with a cleansing shampoo and rinse well.<br>\
+                2. Steroids: Steroids like prednisone or dexamethasone help in controling your dog skin problems.<br>\
+                These steroids fight inflammation leading to skin pain and itchiness.<br>\
+                3. Aplly Vitamin E oil on the skin.<br>\
+                \
+                <h4>Step 3.</h4>\
+                Find hospitals near you, using the button below. ';
+            }
+
+            else if(animal_val == 'dog' && injury_val == 'fracture'){
+                document.getElementById('help_result').innerHTML = '\
+                <img src="images/dog.jfif" alt="">\
+                <h4>Step 1.</h4>\
+                Make sure your patient is calm.<br>\
+                If not, use the sound below to make them calm.<br>\
+                <audio controls>\
+                    <source src="audio/Dog.mp3" type="">\
+                </audio>\
+                \
+                <h4>Step 2.</h4>\
+                Move the limb as little as possible. Do not try and splint the limb.<br>\
+                \
+                \
+                <h4>Step 3.</h4>\
+                Transport the patient to the nearest hospital as soon as possible for an X-ray.<br>\
+                \
+                \
+                <h4>Step 4.</h4>\
+                Find the hospitals near you by clicking the button below. ';
+            }
+
+            else if(animal_val == 'cat' && injury_val == 'wound'){
+                document.getElementById('help_result').innerHTML = '\
+                <img src="images/cat.jfif" alt="">\
+                <h4>Step 1.</h4>\
+                Make sure your patient is calm.<br>\
+                If not, use the sound below to make them calm.<br>\
+                <audio controls>\
+                    <source src="audio/Cat.mp3" type="">\
+                </audio>\
+                <h4>Step 2.</h4>\
+                Clean the wound gently using water (mix is with salt is available)<br>\
+                Note: Do not use rubbing alcohol or hydrogen peroxide, as these can damage the tissue and delay healing.<br>\
+                Dry the wound by slowly patting with cloth and apply antibacterial ointment (if available) or spread little termite powder on it.<br>\
+                Cover the wound with a piece of cloth or bandage (if available). While covering it with cloth, apply a LITTLE pressure on it,\
+                just enough to stop the blood flow until reached the hospital.\
+                Note that your patient can tolerate the process and feel safe around you.<br>\
+                \
+                \
+                <h4>Step 3.</h4>\
+                Find hospitals near you, using the button below. ';
+            }
+
+            else if(animal_val == 'cat' && injury_val == 'rashes'){
+                document.getElementById('help_result').innerHTML = '<img src="images/cat.jfif" alt="">\
+                <h4>Step 1.</h4>\
+                Make sure your patient is calm.<br>\
+                If not, use the sound below to make them calm.<br>\
+                <audio controls>\
+                    <source src="audio/Cat.mp3" type="">\
+                </audio>\
+                <h4>Step 2.</h4>\
+                When it comes to Skin Disorders, there are multiple treatments you can go for before taking the patient to the hospital.<br>\
+                (Make sure your hands are covered with gloves or any material to avoid the direct contact)<br>\
+                1. Shampoo treatment:\ Medicated shampoos are commonly used as topical treatments for specific skin conditions.<br>\
+                Before applying a medicated shampoo, wash your dog with a cleansing shampoo and rinse well.<br>\
+                2. Steroids: Steroids like prednisone or dexamethasone help in controling your cat skin problems.<br>\
+                These steroids fight inflammation leading to skin pain and itchiness.<br>\
+                3. Aplly Vitamin E oil on the skin.<br>\
+                \
+                <h4>Step 3.</h4>\
+                Find hospitals near you, using the button below.';
+            }
+
+            else if(animal_val == 'cat' && injury_val == 'fracture'){
+                document.getElementById('help_result').innerHTML = '<img src="images/cat.jfif" alt="">\
+                <h4>Step 1.</h4>\
+                Make sure your patient is calm.<br>\
+                If not, use the sound below to make them calm.<br>\
+                <audio controls>\
+                    <source src="audio/Cat.mp3" type="">\
+                </audio>\
+                <h4>Step 2.</h4>\
+                Move the limb as little as possible. Do not try and splint the limb.<br>\
+                \
+                \
+                <h4>Step 3.</h4>\
+                Transport the patient to the nearest hospital as soon as possible for an X-ray.<br<\
+                Find the hospitals near you by clicking the button below.';
+            }
+
+            else if(animal_val == 'cow' && injury_val == 'wound'){
+                document.getElementById('help_result').innerHTML = '<img src="images/cow.jfif" alt="">\
+                <h4>Step 1.</h4>\
+                Make sure your patient is calm.<br>\
+                If not, use the sound below to make them calm.<br>\
+                \
+                \
+                <h4>Step 2.</h4>\
+                Clean the wound gently using water (mix is with salt is available)<br>\
+                Note: Do not use rubbing alcohol or hydrogen peroxide, as these can damage the tissue and delay healing.<br>\
+                Dry the wound by slowly patting with cloth and apply antibacterial ointment (if available) or spread little termite powder on it.<br>\
+                Cover  the wound with a piece of cloth or bandage (if available). While covering it with cloth, apply a LITTLE pressure on it,\ just enough to stop the blood flow until reached the hospital.<br>\
+                Note that your patient can tolerate the process and feel safe around you.<br>\
+                \
+                \
+                <h4>Step 3.</h4>\
+                Find hospitals near you, using the button below.';
+                
+            }
+
+            else if(animal_val == 'cow' && injury_val == 'rashes'){
+                document.getElementById('help_result').innerHTML = '<img src="images/cow.jfif" alt="">\
+                <h4>Step 1.</h4>\
+                Make sure your patient is calm.<br>\
+                If not, use the sound below to make them calm.<br>\
+                <audio controls>\
+                    <source src="audio/cow_Buffalo.mp3" type="">\
+                </audio>\
+                <h4>Step 2.</h4>\
+                When it comes to Skin Disorders, there are multiple treatments you can go for before taking the patient to the hospital.<br>\
+                (Make sure your hands are covered with gloves or any material to avoid the direct contact)<br>\
+                1. Shampoo treatment:\ Medicated shampoos are commonly used as topical treatments for specific skin conditions.<br>\
+                Before applying a medicated shampoo, wash your dog with a cleansing shampoo and rinse well.<br>\
+                2. Steroids: Steroids like prednisone or dexamethasone help in controling your patient skin problems.<br>\
+                These steroids fight inflammation leading to skin pain and itchiness.<br>\
+                3. Aplly Vitamin E oil on the skin.<br>\
+                \
+                <h4>Step 3.</h4>\
+                Find hospitals near you, using the button below.';
+            }
+
+            else if(animal_val == 'cow' && injury_val == 'fracture'){
+                document.getElementById('help_result').innerHTML = '<img src="images/cow.jfif" alt="">\
+                <h4>Step 1.</h4>\
+                Make sure your patient is calm.<br>\
+                If not, use the sound below to make them calm.<br>\
+                <audio controls>\
+                    <source src="audio/cow_Buffalo.mp3" type="">\
+                </audio>\
+                <h4>Step 2.</h4>\
+                Move the limb as little as possible. Do not try and splint the limb.<br>\
+                \
+                \
+                <h4>Step 3.</h4>\
+                Transport the patient to the nearest hospital as soon as possible for an X-ray.<br<\
+                Find the hospitals near you by clicking the button below.';
+            }
+
+            else if(animal_val == 'bird' && injury_val == 'wound'){
+                document.getElementById('help_result').innerHTML = '<img src="images/bird.jfif" alt="">\
+                <h4>Step 1.</h4>\
+                Make sure your patient is calm.<br>\
+                If not, use the sound below to make them calm.<br>\
+                <audio controls>\
+                    <source src="audio/birds.mp3" type="">\
+                </audio>\
+                <h4>Step 2.</h4>\
+                Place the bird in the area of less activity and where you can increase temperature easily.<br>\
+                If in a cage, cover the cage with a towel or blanket ON ALL BUT ONE SIDE to eliminate drafts.<br>\
+                \
+                Bleeding emergencies often warrant the use of pressure wraps to aid in the application of direct pressure to open cuts,<br>\
+                abrasions, and fractures.\ Do not apply a wrap if you are uncertain of the proper method.<br>\
+                Most bleeding skin wounds will clot on their own or be “protected” by the bird from further injury.<br>\
+                Cotton swabs can help control bleeding or wet feathers to move them away from a wound Use tweezers to remove debris from wounds,<br>\
+                remove splinters and ticks, and untangle string wound around small feet.<br>\
+                \
+                \
+                <h4>Step 3.</h4>\
+                Find hospitals near you, using the button below.';
+            }
+
+            else if(animal_val == 'goat' && injury_val == 'wound'){
+                document.getElementById('help_result').innerHTML = '<img src="images/goat.jfif" alt="">\
+                <h4>Step 1.</h4>\
+                Make sure your patient is calm.<br>\
+                If not, use the sound below to make them calm.<br>\
+                <audio controls>\
+                    <source src="audio/sheep_goat.mp3" type="">\
+                </audio>\
+                <h4>Step 2.</h4>\
+                Clean the wound gently using water (mix is with salt is available)<br>\
+                Note: Do not use rubbing alcohol or hydrogen peroxide, as these can damage the tissue and delay healing.<br>\
+                Dry the wound by slowly patting with cloth and apply antibacterial ointment (if available) or spread little termite powder on it.<br>\
+                Cover  the wound with a piece of cloth or bandage (if available). While covering it with cloth, apply a LITTLE pressure on it,\ just enough to stop the blood flow until reached the hospital.<br>\
+                Note that your patient can tolerate the process and feel safe around you.<br>\
+                \
+                \
+                <h4>Step 3.</h4>\
+                Find hospitals near you, using the button below.';
+            }
+
+            else if(animal_val == 'goat' && injury_val == 'rashes'){
+                document.getElementById('help_result').innerHTML = '<img src="images/goat.jfif" alt="">\
+                <h4>Step 1.</h4>\
+                Make sure your patient is calm.<br>\
+                If not, use the sound below to make them calm.<br>\
+                <audio controls>\
+                    <source src="audio/sheep_goat.mp3" type="">\
+                </audio>\
+                <h4>Step 2.</h4>\
+                When it comes to Skin Disorders, there are multiple treatments you can go for before taking the patient to the hospital.<br>\
+                (Make sure your hands are covered with gloves or any material to avoid the direct contact)<br>\
+                1. Shampoo treatment:\ Medicated shampoos are commonly used as topical treatments for specific skin conditions.<br>\
+                Before applying a medicated shampoo, wash your dog with a cleansing shampoo and rinse well.<br>\
+                2. Steroids: Steroids like prednisone or dexamethasone help in controling your patient skin problems.<br>\
+                These steroids fight inflammation leading to skin pain and itchiness.<br>\
+                3. Aplly Vitamin E oil on the skin.<br>\
+                \
+                <h4>Step 3.</h4>\
+                Find hospitals near you, using the button below.';
+
+            }
+
+            else if(animal_val == 'goat' && injury_val == 'fracture'){
+                document.getElementById('help_result').innerHTML = '<img src="images/goat.jfif" alt="">\
+                <h4>Step 1.</h4>\
+                Make sure your patient is calm.<br>\
+                If not, use the sound below to make them calm.<br>\
+                <audio controls>\
+                    <source src="audio/sheep_goat.mp3" type="">\
+                </audio>\
+                <h4>Step 2.</h4>\
+                Move the limb as little as possible. Do not try and splint the limb.<br>\
+                \
+                \
+                <h4>Step 3.</h4>\
+                Transport the patient to the nearest hospital as soon as possible for an X-ray.<br<\
+                Find the hospitals near you by clicking the button below.';
+            }
+
+            else{
+                document.getElementById('help_result').innerHTML = '<h4>No Data Available</h4>'
+            }
+        }
+    </script>
+	<script src="asset/js/jquery.min.js"></script>
+	<script src="asset/js/jquery.scrolly.min.js"></script>
+	<script src="asset/js/jquery.scrollex.min.js"></script>
+	<script src="asset/js/browser.min.js"></script>
+	<script src="asset/js/breakpoints.min.js"></script>
+	<script src="asset/js/util.js"></script>
+	<script src="asset/js/main.js"></script>
+
+</body>
+</html> 
+
