@@ -12,10 +12,10 @@ The site works equally well on PCs, laptops and mobiles.
 
 
 ## Team members
-Abhinav Tripathi 
+Abhinav Tripathi  abhitrip2002@gmail.com
 
-Shrevi Jain
+Shrevi Jain       shrevijainbhl@gmail.com
 
-Sukriti Rajora
+Sukriti Rajora    sukritirajora
 
-Tejas Prajapati 
+Tejas Prajapati   tejas.20cse404@rtu.ac.in
