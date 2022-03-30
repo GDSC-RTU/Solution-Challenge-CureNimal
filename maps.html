@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #map {
+            width: 100%;
+            height: 550px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            
+            var options = {
+                zoom : 12,
+                center : {lat:25.2138,lng:75.8648},
+            }
+
+            var map= new 
+            google.maps.Map(document.getElementById('map') , options);
+        
+
+       // The marker
+       /* var marker = new google.maps.Marker({
+        position:  {lat:25.2138,lng:75.8648} ,
+        map: map,
+        });
+        
+        var infowindow = new google.maps.InfoWindow({
+            content: '<h1> Kota </h1>'
+        });
+
+        marker.addListener('click', function(){
+            infowindow.open(map,marker);
+        });*/
+
+        addMarker({lat:25.1587,lng:75.8272})
+        addMarker({lat:25.15196,lng:75.84907})
+        addMarker({lat:25.17390,lng:75.83844})
+        addMarker({lat:25.15207,lng:75.84653})
+        addMarker({lat:25.17482,lng:75.83803})
+        addMarker({lat:25.12695,lng:75.84866})
+        addMarker({lat:25.13977,lng:75.82069})
+        addMarker({lat:25.15391,lng:75.83562})
+        addMarker({lat:25.15531,lng:75.84283})
+        addMarker({lat:25.17504,lng:75.88403})
+        addMarker({lat:25.17794,lng:75.83992})
+        addMarker({lat:25.13915,lng:75.82052})
+        addMarker({lat:25.15345,lng:75.89845})
+
+        function addMarker(coords){
+            var marker = new google.maps.Marker({
+                position:coords,
+                map: map,
+                
+            })
+            
+        }
+    }
+    </script>
+
+       /* <!-- <script>
+        let map;
+        let service;
+        let infowindow;
+
+        function initMap() {
+        const sydney = new google.maps.LatLng(25.2138, 75.8648);
+
+        infowindow = new google.maps.InfoWindow();
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: sydney,
+            zoom: 15,
+        });
+
+        const request = {
+            query: "Museum of Contemporary Art Australia",
+            fields: ["name", "geometry"],
+        };
+
+        service = new google.maps.places.PlacesService(map);
+        service.findPlaceFromQuery(request, (results, status) => {
+            if (status === google.maps.places.PlacesServiceStatus.OK && results) {
+            for (let i = 0; i < results.length; i++) {
+                createMarker(results[i]);
+            }
+
+            map.setCenter(results[0].geometry.location);
+            }
+        });
+        }
+
+        function createMarker(place) {
+        if (!place.geometry || !place.geometry.location) return;
+
+        const marker = new google.maps.Marker({
+            map,
+            position: place.geometry.location,
+        });
+
+        google.maps.event.addListener(marker, "click", () => {
+            infowindow.setContent(place.name || "");
+            infowindow.open(map);
+        });
+        }-->
+<!-- <script>
+     var map;
+
+function initMap() {
+    // Create the map.
+    var pyrmont = {
+        lat: 25.2138,
+        lng:  75.8648
+    };
+    if (navigator.geolocation) {
+        try {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var pyrmont = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+            });
+        } catch (err) {
+
+        }
+    }
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: pyrmont,
+        zoom: 17
+    });
+
+    // Create the places service.
+    var service = new google.maps.places.PlacesService(map);
+
+    // Perform a nearby search.
+    service.nearbySearch({
+            location: pyrmont,
+            radius: 4000,
+            type: ['hospital']
+        },
+        function(results, status, pagination) {
+            if (status !== 'OK') return;
+
+            createMarkers(results);
+            getNextPage = pagination.hasNextPage && function() {
+                pagination.nextPage();
+            };
+        });
+}
+
+function createMarkers(places) {
+    var bounds = new google.maps.LatLngBounds();
+    for (var i = 0, place; place = places[i]; i++) {
+        var image = {
+            url: place.icon,
+            size: new google.maps.Size(71, 71),
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(17, 34),
+            scaledSize: new google.maps.Size(25, 25)
+        };
+
+        var marker = new google.maps.Marker({
+            map: map,
+            icon: image,
+            title: place.name,
+            position: place.geometry.location
+        });
+        bounds.extend(place.geometry.location);
+    }
+    map.fitBounds(bounds);
+} -->*/
+
+    
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBmF8gF6Tgv50ZhZbOMo0pDlbDmfuTjMk&callback=initMap">
+    </script>
+    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d115539.81409289516!2d75.78513712956781!3d25.182333118798784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sanimal%20hospitals%20in%20kota!5e0!3m2!1sen!2sin!4v1648369389184!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+    
+
+</body>
+</html>
