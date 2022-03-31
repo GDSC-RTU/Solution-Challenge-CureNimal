@@ -30,6 +30,22 @@ https://gdsc-rtu.github.io/Solution-Challenge-CureNimal/
 
 -Make sure your pet is doing well through "My Pet"
 
+## Technologies used:
+ Firebase
+ 
+ Google Cloud API
+ 
+ HTML
+ 
+ CSS
+ JS
+ 
+ SCSS
+ 
+ ## SDG solving:
+ 1. Life on land
+ 2.  Good Health & Wellbeing
+
 
 ## Team members
 Abhinav Tripathi  abhitrip2002@gmail.com
