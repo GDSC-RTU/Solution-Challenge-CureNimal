@@ -40,19 +40,26 @@ https://gdsc-rtu.github.io/Solution-Challenge-CureNimal/
  HTML
  
  CSS
+ 
  JS
  
  SCSS
  
  ## SDG solving:
  1. Life on land
- 2.  Good Health & Wellbeing
+ 2. Good Health & Wellbeing
+
+## How to run the code:
+
+1. In order to run the code provided above, download the zip file of the project or clone the repository using the url link.
+2. Once the repository linked with your source code editor, you can see all the files, assets and code for every page in the website.
+3. Right click on the page you wish to open in your browser and select 'Open in live server'.
 
 
 ## Team members
 Abhinav Tripathi  abhitrip2002@gmail.com
 
-Shrevi Jain       shrevijainbhl@gmail.com
+Shrevi Jain      shrevijainbhl@gmail.com
 
 Sukriti Rajora    sukritirajora@gmail.com
 
